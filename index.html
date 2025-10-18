@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Derma Saipuddin</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: white;
+    }
+
+    /* first */
+    header {
+      background: #0000;
+      padding: 15px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-weight: bold;
+      font-size: 20px;;
+      margin-left: 60px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 70px;
+      margin-left: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 900;
+    
+    }
+
+    .hero {
+      display: flex;
+      height: -10px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 10%;
+      background: #3a3f4d;
+      border-left: 50px;
+      
+    }
+
+    .hero-text {
+      max-width: 370px;
+      margin-left: 30px;
+
+    }
+
+    .hero-text h3 {
+      font-weight: 500px;
+      font-size: 30px;
+      margin-left: 30px;
+      margin-bottom: 10px;
+      
+    }
+
+    .hero-text h1 {
+      font-size: 40px;
+      font-weight: bold;
+      margin-left: 30px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 20px;
+      margin-right: 10px;
+      margin-top: 30px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .hero-img img {
+      width: 300px;
+      height: 400px;
+      border-radius: 50% / 30%;
+      object-fit: cover;
+    }
+
+    /* second */
+    .bx-border{
+      display: flex;
+      height: -10px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 10%;
+      background: #3a3f4d;
+      border-left: 50px;
+    }
+  
+    .about-section {
+      background: #3a3f4d;
+      display: flex;
+      height: -15px;
+      margin-bottom: -20px;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 4%;
+    
+    }
+
+    .about-section img {
+      width: 250px;
+      height: 350px;
+      margin-top: -180px;
+      margin-left: 50px;
+      border-radius: 50% / 30%;
+      object-fit: cover;
+    }
+
+    .titles span{
+      color: #8ba4ff;
+    } 
+    
+
+    h2 {
+      font-weight: bold;
+      font-size: 17px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      margin-left: 365px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+    p{
+      
+      font-weight: bold;
+      font-size: 17px;
+      margin-top: -90px;
+      margin-bottom: -10px;
+      margin-left: 30px;
+      height: -10px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .arrows  {
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+      font-size: 22px;
+      color: #fff;
+      cursor: pointer;
+      justify-content: space-between;
+    }
+
+    /* third */
+    
+  .arrow  {
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+      font-size: 22px;
+      color: #fff;
+      cursor: pointer;
+      justify-content: space-between;
+    }
+
+  
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    padding: 30px 22%;
+
+  }
+  
+  .skills-image {
+    margin-top: 30px;
+    max-width: 110%;
+    max-height: 70%;
+    margin-bottom: -30px;
+    border-radius: 8px;
+  }
+
+  /* fourth */
+  
+  .containers {
+    max-width: 1500%;
+    margin: 30px auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding: 80px;
+    background-color: #3a3f4d;
+  }
+   .titles {
+    color: #fff;
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: -30px;
+    margin-left: 47%;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .project-card {
+    background-color: #3b3b4f;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    transition: transform 0.2s;
+  }
+  .project-image {
+    width: 100%;
+    margin-top: 60px;
+    border-radius: 15px;
+    height: 190px;
+    object-fit: cover;
+  }
+  .project-title {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.1em;
+  }
+  /* fifth */
+  .box {
+    
+    position: relative;
+    width: 100%;
+    max-height: 70%;
+    max-width: 1500%;
+    background-color: #3a3f4d; 
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 80px;
+   
+  }
+  
+
+  
+  .title {
+    color: #151925;
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: -30px;
+    margin-left: 40%;
+  }
+   a{
+    color: #fff;
+    font-weight: 32px;
+    margin-right: 30px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-style: italic;
+    font-size: 14px;
+  }
+
+  input[type="text"], input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  input[type="text"]:focus, input[type="email"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  }
+
+  
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #7b8fa1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #667b8d;
+  }
+ 
+    
+    
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Portfolio.</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h3>Hello It's Me</h3>
+      <h1>Derma Saipuddin</h1>
+      <p>
+        My goal is to become proficient in computing and I
+        believe this program will provide the foundation I
+        need to achieve that. I'm excited to connect with 
+        fellow tech enthusiasts and build a strong network.
+      </p>
+    </div>
+    <div class="hero-img">
+      <img src="https://wallpapers.com/images/hd/gaming-profile-pictures-07439gd6t42hkljc.jpg" alt="Derma Saipuddin Avatar">
+    
+  </section>
+  <section class="box-border" id="about">
+  </div>
+  
+   <div class="box">
+    <div class="arrow">
+        <i class="fas fa-chevron-left"></i>
+        <i class="fas fa-chevron-right"></i>
+    </div>
+    <div class="titles">About <span>Me</span></div>
+    
+  
+      <h2>
+        I’m a shy person but when I’m comfortable I’m sweet 
+        friend or person. I have a good heart towards everyone,
+        and I know how to respect others even I don’t know
+        them. I’m a dedicated student who enjoys challenges.
+      </h2>
+
+       <section class="about-section">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.XQXNkF5JDlrf_7XicDVFvQHaLH?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="About Image">
+    
+      <p>
+        As an IT student, I am immersed in the dynamic world of
+         technology, constantly seeking to expand my knowledge
+        and skills in areas such as software development, network 
+        administration, and cybersecurity. I am passionate
+        about problem-solving and enjoy the challenge of creating
+        innovative solutions to complex technical issues.
+        My goal is to leverage my expertise to contribute 
+        to the advancement of technology and make a positive 
+        impact in the digital world.
+        </p>
+
+    </div>
+
+  </section>
+  <section class="box-border" id="skills">
+
+    <div class="box">
+      
+    <div class="arrow">
+        <i class="fas fa-chevron-left"></i>
+        <i class="fas fa-chevron-right"></i>
+    </div>
+    <div class="titles">Skills</div>
+    <div class="content">
+    
+      <img src="https://1.bp.blogspot.com/-I_-I1T-ippc/YJ4PkVYou4I/AAAAAAAACVA/T7HrplZhOWsi-ir05Hpno_Mqg4djQ10_ACPcBGAsYHg/s2048/html%2Bcss%2Band%2Bjavascript.jpeg" alt="Skills" class="skills-image" />
+    </div>
+    <section class="box-border" id="projects">
+</div>
+
+</section>
+
+
+<div class="box">
+  
+
+  <div class="arrow">
+        <i class="fas fa-chevron-left"></i>
+        <i class="fas fa-chevron-right"></i>
+      </div>
+  
+  <div class="titles">Project</div>
+  <div class="project-grid">
+    <div class="project-card">
+      <img src="https://soject.com/wp-content/uploads/2020/10/231.jpg" alt="Face Detection" class="project-image" />
+      <div class="project-title">Face Detection Project</div>
+     
+      
+      
+    </div>
+    <div class="project-card">
+      <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230602175548/Top-Computer-Vision-Projects-(1).webp" alt="Computer Vision" class="project-image" />
+      <div class="project-title">Computer Vision Project</div>
+      
+    </div>
+    <div class="project-card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.byqm3F4NHBSf3oeq884xVgHaD4?cb=12&rs=1&pid=ImgDetMain&o=7&rm=30" alt="Cloud Computing" class="project-image" />
+      <div class="project-title">Cloud Computing Project</div>
+    </div>
+  </div>
+  
+</div>
+<div class="box">
+    
+   <form action="submit_contact.php" method="POST">
+    <div class="arrow">
+        <i class="fas fa-chevron-left"></i>
+        <i class="fas fa-chevron-right"></i>
+  
+      </div>
+
+      <div class="title">Contact <a> Me </a></div>
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Name" />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="email" />
+
+    <label for="contact">Contact no.</label>
+    <input type="text" id="contact" placeholder="number" />
+
+    <button type="submit">Send</button>
+  
+</div>
+</body>
+</html>
+
